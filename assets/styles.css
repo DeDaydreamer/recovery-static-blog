@@ -19,6 +19,7 @@ body {
   background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
   color: var(--text);
   font-family: var(--body-font);
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -47,29 +48,30 @@ a:focus-visible {
 .header-inner,
 .main,
 .footer-inner {
-  max-width: 800px;
+  max-width: 1080px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 24px;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   color: var(--text);
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .brand span {
-  font-size: 1.05rem;
+  font-size: 0.98rem;
 }
 
 .logo-main {
@@ -84,12 +86,14 @@ a:focus-visible {
 .nav {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  margin-left: auto;
 }
 
 .nav a {
   color: var(--text);
   font-weight: 600;
+  font-size: 0.96rem;
   padding: 6px 10px;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -111,10 +115,10 @@ a:focus-visible {
 }
 
 .content-card {
-  background: rgba(15, 23, 42, 0.72);
+  background: rgba(15, 23, 42, 0.68);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 24px;
+  padding: 22px;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
 }
 
@@ -125,23 +129,23 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 12px;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 12px;
 }
 
 p {
-  margin: 0 0 16px;
+  margin: 0 0 15px;
 }
 
 .meta {
   color: #94a3b8;
-  font-size: 0.95rem;
-  margin-bottom: 14px;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
 }
 
 .post-list {
@@ -150,24 +154,24 @@ p {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .post-item {
-  padding: 14px;
+  padding: 12px 14px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: rgba(15, 23, 42, 0.65);
+  background: rgba(15, 23, 42, 0.62);
 }
 
 .post-item a {
   color: var(--accent-soft);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .post-item .meta {
-  margin: 6px 0 10px;
+  margin: 6px 0 8px;
 }
 
 .footer {
@@ -178,24 +182,31 @@ p {
 .footer-inner {
   text-align: center;
   color: #94a3b8;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .back-link {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 10px;
   font-weight: 600;
 }
 
-@media (max-width: 640px) {
-  .header-inner,
-  .main,
-  .footer-inner {
-    padding: 16px;
+@media (max-width: 760px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .brand span {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .logo-main {
