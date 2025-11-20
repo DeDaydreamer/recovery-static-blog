@@ -68,7 +68,7 @@ a:focus-visible {
 }
 
 .logo-main {
-  height: clamp(32px, 6vw, 44px);
+  height: clamp(24px, 6vw, 28px);
   width: auto;
 }
 
