@@ -195,8 +195,5 @@ p {
     gap: 10px;
   }
 
-  .logo-main {
-    height: clamp(68px, 18vw, 92px);
-    width: auto;
-  }
+  
 }
