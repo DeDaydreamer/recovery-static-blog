@@ -19,7 +19,7 @@ body {
   background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
   color: var(--text);
   font-family: var(--body-font);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -48,52 +48,44 @@ a:focus-visible {
 .header-inner,
 .main,
 .footer-inner {
-  max-width: 1080px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 24px;
+  padding: 18px 22px;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 18px;
 }
+
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  color: var(--text);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.brand span {
-  font-size: 0.98rem;
 }
 
 .logo-main {
-  height: 80px;
+  height: 88px;
   width: auto;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  padding: 6px;
+  max-width: 100%;
+  max-height: 18vw;
 }
+
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-left: auto;
 }
 
 .nav a {
   color: var(--text);
   font-weight: 600;
-  font-size: 0.96rem;
+  font-size: 0.9rem;
   padding: 6px 10px;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -115,7 +107,7 @@ a:focus-visible {
 }
 
 .content-card {
-  background: rgba(15, 23, 42, 0.68);
+  background: rgba(15, 23, 42, 0.62);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 22px;
@@ -129,12 +121,12 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 12px;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 12px;
 }
 
@@ -144,7 +136,7 @@ p {
 
 .meta {
   color: #94a3b8;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-bottom: 12px;
 }
 
@@ -167,7 +159,7 @@ p {
 .post-item a {
   color: var(--accent-soft);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .post-item .meta {
@@ -182,7 +174,7 @@ p {
 .footer-inner {
   text-align: center;
   color: #94a3b8;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .back-link {
@@ -205,11 +197,8 @@ p {
     gap: 10px;
   }
 
-  .brand span {
-    font-size: 0.95rem;
-  }
-
   .logo-main {
-    height: 72px;
+    height: 76px;
+    max-height: 26vw;
   }
 }
