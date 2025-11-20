@@ -1,5 +1,6 @@
 :root {
-  --bg: #020617;
+  --bg-start: #01050f;
+  --bg-end: #0b1b3b;
   --surface: #0f172a;
   --text: #e5e7eb;
   --accent: #14b8a6;
@@ -15,7 +16,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
   color: var(--text);
   font-family: var(--body-font);
   line-height: 1.7;
@@ -72,7 +73,7 @@ a:focus-visible {
 }
 
 .logo-main {
-  height: 44px;
+  height: 80px;
   width: auto;
   border-radius: 8px;
   border: 1px solid var(--border);
@@ -110,7 +111,7 @@ a:focus-visible {
 }
 
 .content-card {
-  background: var(--surface);
+  background: rgba(15, 23, 42, 0.72);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 24px;
@@ -156,7 +157,7 @@ p {
   padding: 14px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(15, 23, 42, 0.65);
 }
 
 .post-item a {
@@ -198,6 +199,6 @@ p {
   }
 
   .logo-main {
-    height: 40px;
+    height: 72px;
   }
 }
