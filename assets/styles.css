@@ -19,7 +19,7 @@ body {
   background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
   color: var(--text);
   font-family: var(--body-font);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
