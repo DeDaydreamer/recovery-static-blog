@@ -61,7 +61,6 @@ a:focus-visible {
   gap: 18px;
 }
 
-
 .brand {
   display: inline-flex;
   align-items: center;
@@ -72,6 +71,10 @@ a:focus-visible {
   width: auto;
 }
 
+/* --------------------------------------
+   HERO IMAGE (FIXED + RESPONSIVE)
+---------------------------------------*/
+
 .hero-image {
   width: 100%;
   display: flex;
@@ -80,20 +83,21 @@ a:focus-visible {
 }
 
 .hero-image img {
-  width: 100%;
-  max-width: 657px;   /* your original image width */
+  max-width: 100%;         /* allows shrinking inside card */
+  width: 657px;            /* original desktop width */
   height: auto;
   display: block;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
-
-@media (max-width: 480px) {
+/* Extra safety for phones */
+@media (max-width: 600px) {
   .hero-image img {
-    max-width: 95%;
+    width: 100%;           /* fills card width naturally */
+    max-width: 100%;       /* prevents overflow */
   }
 }
-
-
 
 .nav {
   display: flex;
@@ -203,6 +207,7 @@ p {
   font-weight: 600;
 }
 
+/* Responsive nav */
 @media (max-width: 760px) {
   .header-inner {
     flex-direction: column;
@@ -216,6 +221,4 @@ p {
     flex-wrap: wrap;
     gap: 10px;
   }
-
-  
 }
