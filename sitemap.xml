@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Home -->
   <url>
-    <loc>https://thedaydreamverse.blog/</loc>
+    <loc>https://www.thedaydreamverse.blog/</loc>
     <lastmod>2025-11-22</lastmod>
-    <priority>1.00</priority>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
+  <!-- About -->
   <url>
-    <loc>https://thedaydreamverse.blog/about</loc>
+    <loc>https://www.thedaydreamverse.blog/about.html</loc>
     <lastmod>2025-11-22</lastmod>
-    <priority>0.80</priority>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Posts index -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/posts.html</loc>
+    <lastmod>2025-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Post: Clear mornings -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/posts/clear-mornings.html</loc>
+    <lastmod>2025-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/contact.html</loc>
+    <lastmod>2025-11-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
