@@ -71,20 +71,26 @@ a:focus-visible {
   width: auto;
 }
 
-/* HERO IMAGE – CENTERED + RESPONSIVE INSIDE THE CARD */
+/* ================================
+   HERO IMAGE (TEST FRAME VERSION)
+   ================================ */
+
 .hero-image {
-  margin: 2rem 0;
+  margin: 24px 0;
+  padding: 8px;
+  border-radius: 12px;
+  text-align: center;
 }
 
 .hero-image img {
-  display: block;         /* allows margin auto centering */
-  margin-left: auto;
-  margin-right: auto;     /* centers horizontally */
-  max-width: 100%;        /* never wider than the card */
-  height: auto;           /* keeps proportions */
-  border-radius: 4px;     /* optional */
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 657px !important;     /* cap at original width on desktop */
+  width: 100% !important;          /* shrink inside the card on small screens */
+  height: auto !important;
 }
 
+/* ================================ */
 
 .nav {
   display: flex;
@@ -125,7 +131,9 @@ a:focus-visible {
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--text);
   margin-top: 0;
   letter-spacing: 0.01em;
@@ -148,64 +156,4 @@ p {
 .meta {
   color: #94a3b8;
   font-size: 0.8rem;
-  margin-bottom: 12px;
-}
-
-.post-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.post-item {
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: rgba(15, 23, 42, 0.62);
-}
-
-.post-item a {
-  color: var(--accent-soft);
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.post-item .meta {
-  margin: 6px 0 8px;
-}
-
-.footer {
-  border-top: 1px solid var(--border);
-  background: rgba(15, 23, 42, 0.85);
-}
-
-.footer-inner {
-  text-align: center;
-  color: #94a3b8;
-  font-size: 0.85rem;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-/* Responsive nav */
-@media (max-width: 760px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .nav {
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
+  margin-bottom: 12p
