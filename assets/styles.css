@@ -73,20 +73,19 @@ a:focus-visible {
 }
 
 .hero-image {
-  margin: 2rem 0;
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin: 2rem 0;
 }
-
-
 
 .hero-image img {
   width: 100%;
-  max-width: 657px;     /* keeps desktop size limit */
+  max-width: 657px;   /* your original image width */
   height: auto;
   display: block;
-  margin: 0 auto;
 }
+
 
 @media (max-width: 480px) {
   .hero-image img {
