@@ -84,6 +84,20 @@ a:focus-visible {
   /* optional – remove if you want completely flat */
 }
 
+.hero-image img {
+  width: 100%;
+  max-width: 657px;     /* keeps desktop size limit */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .hero-image img {
+    max-width: 95%;
+  }
+}
+
 
 
 .nav {
