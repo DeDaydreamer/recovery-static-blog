@@ -78,11 +78,7 @@ a:focus-visible {
   justify-content: center;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  /* optional – remove if you want completely flat */
-}
+
 
 .hero-image img {
   width: 100%;
