@@ -71,21 +71,20 @@ a:focus-visible {
   width: auto;
 }
 
-/* -------- HERO IMAGE: CENTERED + RESPONSIVE -------- */
-
+/* HERO IMAGE – CENTERED + RESPONSIVE INSIDE THE CARD */
 .hero-image {
   margin: 2rem 0;
-  text-align: center;       /* centers inline/inline-block children */
 }
 
 .hero-image img {
-  max-width: 100%;          /* never wider than the card */
-  height: auto;             /* keep proportions */
-  display: inline-block;    /* so text-align: center works */
-  border-radius: 4px;       /* optional, remove if you want */
+  display: block;         /* allows margin auto centering */
+  margin-left: auto;
+  margin-right: auto;     /* centers horizontally */
+  max-width: 100%;        /* never wider than the card */
+  height: auto;           /* keeps proportions */
+  border-radius: 4px;     /* optional */
 }
 
-/* --------------------------------------- */
 
 .nav {
   display: flex;
