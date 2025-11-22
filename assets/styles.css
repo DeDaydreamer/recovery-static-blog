@@ -71,33 +71,21 @@ a:focus-visible {
   width: auto;
 }
 
-/* --------------------------------------
-   HERO IMAGE (FIXED + RESPONSIVE)
----------------------------------------*/
+/* -------- HERO IMAGE: CENTERED + RESPONSIVE -------- */
 
 .hero-image {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   margin: 2rem 0;
+  text-align: center;       /* centers inline/inline-block children */
 }
 
 .hero-image img {
-  max-width: 100%;         /* allows shrinking inside card */
-  width: 657px;            /* original desktop width */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 4px;
+  max-width: 100%;          /* never wider than the card */
+  height: auto;             /* keep proportions */
+  display: inline-block;    /* so text-align: center works */
+  border-radius: 4px;       /* optional, remove if you want */
 }
 
-/* Extra safety for phones */
-@media (max-width: 600px) {
-  .hero-image img {
-    width: 100%;           /* fills card width naturally */
-    max-width: 100%;       /* prevents overflow */
-  }
-}
+/* --------------------------------------- */
 
 .nav {
   display: flex;
