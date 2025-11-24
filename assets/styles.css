@@ -85,7 +85,7 @@ a:focus-visible {
 .hero-image img {
   display: block;
   margin: 0 auto;
-  max-width: 657px;            /* desktop cap */
+  max-width: 647px;            /* desktop cap */
   width: 100%;                 /* shrink inside card on small screens */
   height: auto;
 }
