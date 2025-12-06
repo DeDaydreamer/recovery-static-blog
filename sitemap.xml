@@ -25,7 +25,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Post: Clear mornings -->
+  <!-- Post: Clear Mornings -->
   <url>
     <loc>https://www.thedaydreamverse.blog/posts/clear-mornings.html</loc>
     <lastmod>2025-11-29</lastmod>
@@ -33,7 +33,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Post: The Story of My Recovery – Part 1 -->
+  <!-- Post: The Story of My Recovery – Part 1 (EN) -->
   <url>
     <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-1.html</loc>
     <lastmod>2025-11-29</lastmod>
@@ -41,9 +41,41 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Post: The Story of My Recovery – Part 2 -->
+  <!-- Post: The Story of My Recovery – Part 1 (PL) -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-1-pl.html</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Post: The Story of My Recovery – Part 1 (NL) -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-1-nl.html</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Post: The Story of My Recovery – Part 2 (EN) -->
   <url>
     <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-2.html</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Post: The Story of My Recovery – Part 2 (PL) -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-2-pl.html</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Post: The Story of My Recovery – Part 2 (NL) -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-2-nl.html</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
