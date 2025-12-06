@@ -4,7 +4,7 @@
   <!-- Home -->
   <url>
     <loc>https://www.thedaydreamverse.blog/</loc>
-    <lastmod>2025-11-22</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- About -->
   <url>
     <loc>https://www.thedaydreamverse.blog/about.html</loc>
-    <lastmod>2025-11-22</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Posts index -->
   <url>
     <loc>https://www.thedaydreamverse.blog/posts.html</loc>
-    <lastmod>2025-11-22</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -28,15 +28,23 @@
   <!-- Post: Clear mornings -->
   <url>
     <loc>https://www.thedaydreamverse.blog/posts/clear-mornings.html</loc>
-    <lastmod>2025-11-22</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Post: story of my recovery 1-->
+
+  <!-- Post: The Story of My Recovery – Part 1 -->
   <url>
-    <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-1</loc>
-    <lastmod>2025-11-22</lastmod>
+    <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-1.html</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Post: The Story of My Recovery – Part 2 -->
+  <url>
+    <loc>https://www.thedaydreamverse.blog/posts/the-story-of-my-recovery-part-2.html</loc>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -44,7 +52,7 @@
   <!-- Contact -->
   <url>
     <loc>https://www.thedaydreamverse.blog/contact.html</loc>
-    <lastmod>2025-11-22</lastmod>
+    <lastmod>2025-11-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
