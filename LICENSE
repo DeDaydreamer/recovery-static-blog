@@ -1,0 +1,60 @@
+MIT License (for code only)
+===========================
+
+Copyright (c) 2025 Aleksander “Aleks” Dubowski (DeDaydreamer)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software (the “Software”) to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+Content License (for all written text)
+======================================
+
+All written content in this repository — including but not limited to:
+articles, essays, stories, translations, reflections, recovery narratives,
+and any other prose — is proprietary and protected under copyright.
+
+Copyright (c) 2025 Aleksander “Aleks” Dubowski  (DeDaydreamer)
+All Rights Reserved.
+
+You may NOT, without explicit written permission from the author:
+
+- Reproduce the articles or translations in full or in part
+- Redistribute, republish, or host the writing elsewhere
+- Adapt, remix, translate, or create derivative works
+- Use the writing commercially in any form
+- Use the writing as training data for AI or machine learning models
+- Include the writing in datasets, corpora, or scraping pipelines
+
+You MAY:
+
+- Quote brief portions (under 200 words) with proper attribution and a link to  
+  https://www.thedaydreamverse.blog/
+- Fork and use the *code* portion of the site under the MIT license
+- Learn from, inspect, or reuse the HTML/CSS structure
+
+**The written content is not open source and is not licensed for redistribution.**
+
+
+Separation of Concerns
+======================
+
+This repository contains two categories of material:
+
+1. **Software (HTML/CSS/structure/assets)** → governed by the MIT License  
+2. **Written content (articles)** → governed by All Rights Reserved
+
+These licenses coexist and apply independently to their respective components.
