@@ -1,6 +1,6 @@
 // functions/api/newsletter.js
 export async function onRequestPost(context) {
-  const { request } = context;
+  const { request, env } = context;
 
   // Read form data
   const formData = await request.formData();
@@ -17,44 +17,33 @@ export async function onRequestPost(context) {
     return new Response("Invalid email address", { status: 400 });
   }
 
-  // Prepare MailChannels payload
-  const body = {
-    personalizations: [
-      {
-        to: [{ email: "aleks@thedaydreamverse.blog", name: "Aleks" }],
-        subject: "New Daydreamverse newsletter subscriber"
-      }
-    ],
-    from: {
-      email: "aleks@thedaydreamverse.blog",
-      name: "Aleks – The Daydreamverse Blog"
-    },
-    content: [
-      {
-        type: "text/plain",
-        value:
-          `New subscriber for The Daydreamverse newsletter:\n\n` +
-          `Name: ${name || "(not provided)"}\n` +
-          `Email: ${email}\n`
-      }
-    ]
+  // Prepare Resend payload
+  const payload = {
+    from: "Aleks – The Daydreamverse <aleks@thedaydreamverse.blog>",
+    to: ["aleks@thedaydreamverse.blog"],
+    subject: "New Daydreamverse newsletter subscriber",
+    text:
+      `New subscriber for The Daydreamverse newsletter:\n\n` +
+      `Name: ${name || "(not provided)"}\n` +
+      `Email: ${email}\n`
   };
 
-  // Send via MailChannels (Cloudflare-integrated)
-  const mcResponse = await fetch("https://api.mailchannels.net/tx/v1/send", {
+  // Call Resend API
+  const resendResponse = await fetch("https://api.resend.com/emails", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body)
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${env.RESEND_API_KEY}`
+    },
+    body: JSON.stringify(payload)
   });
 
-  if (!mcResponse.ok) {
-    console.error("MailChannels error", mcResponse.status, await mcResponse.text());
+  if (!resendResponse.ok) {
+    const errorText = await resendResponse.text();
+    console.error("Resend error", resendResponse.status, errorText);
     return new Response("Unable to send email right now.", { status: 500 });
   }
 
-  // Redirect to thank-you page
-  return Response.redirect(
-    "https://www.thedaydreamverse.blog/newsletter-thanks.html",
-    303
-  );
+  // Redirect to thank-you page (relative URL)
+  return Response.redirect("/newsletter-thanks.html", 303);
 }
