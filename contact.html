@@ -56,11 +56,45 @@
         
 		<h1>Contact</h1>
 
-<p>If you want to reach out — about something you read, your own story, addiction, recovery, life, or anything else — my inbox is open.</p>
-<p>I'm looking forward to publishing articles from <strong>Guest Authors!</strong> Please reach out if you want to share your thoughts in my place.</p>
-<p>Consider a donation (any kind of contribution, not necessarely money)towards The Daydream Foundation launch. Let's help others. Send me an email and I'll reply with the project details.</p>
+<p>Your thoughts, comments, opinions, arguments... anything. I reply to every message.</p>
 
-<h3>Email: <a href="mailto:aleks@thedaydreamverse.blog">aleks@thedaydreamverse.blog</a></h3>
+
+
+<div class="form-container">
+  <form class="contact-form" method="POST" action="/api/contact">
+
+    <!-- Honeypot -->
+    <div class="form-row honeypot" aria-hidden="true">
+      <label for="website">Leave this field empty</label>
+      <input type="text" id="website" name="website" autocomplete="off">
+    </div>
+
+    <div class="form-row">
+      <label for="name">Name (optional)</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="subject">Subject (optional)</label>
+      <input type="text" id="subject" name="subject">
+    </div>
+
+    <div class="form-row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+
+    <button type="submit">Send message</button>
+
+  </form>
+</div>
+
+<hr></hr>
 
 <p>You can also find me here:</p>
 <ul><h3>

@@ -335,3 +335,122 @@ p {
   color: #9ca3af;
 }
 
+/* -----------------------------------
+   CONTACT FORM (matches newsletter form)
+----------------------------------- */
+
+/* Base layout */
+.contact-form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+}
+
+/* Shared row layout with newsletter form */
+.contact-form .form-row,
+.newsletter-form .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Labels (inherit newsletter look) */
+.contact-form label,
+.newsletter-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Inputs + textarea styling */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form textarea,
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #020617;
+  color: var(--text);
+  font-family: var(--body-font);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.newsletter-form input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Button (same pill style as newsletter button) */
+.contact-form button[type="submit"],
+.newsletter-form button[type="submit"] {
+  margin-top: 4px;
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #0b1120;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.contact-form button[type="submit"]:hover,
+.newsletter-form button[type="submit"]:hover {
+  background: var(--accent-soft);
+  transform: translateY(-1px);
+}
+
+/* Honeypot field — invisible to humans */
+.contact-form .honeypot {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* Centered wrapper for all forms */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+/* Optional: add soft border/box look */
+.form-container .contact-form {
+  background: #0b1120;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Glow on hoover */
+.form-container .contact-form:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
+}
+
+
+/* Fade in animation */
+.form-container .contact-form {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
