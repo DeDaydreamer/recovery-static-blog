@@ -58,19 +58,22 @@
         
 
         <h2>Subscribe</h2>
-       <form class="newsletter-form" method="POST" action="/api/newsletter">
-  <div class="form-row">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-  </div>
+       <div class="form-container">
+  <form class="newsletter-form" method="POST" action="/api/newsletter">
+    <div class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
 
-  <div class="form-row">
-    <label for="email">Email address</label>
-    <input type="email" id="email" name="email" required>
-  </div>
+    <div class="form-row">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
 
-  <button type="submit">Subscribe</button>
-</form>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
 
 <p class="form-note">
   After you hit “Subscribe”, your details are sent securely and land in my inbox at aleks@thedaydreamverse.blog.

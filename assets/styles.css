@@ -311,7 +311,7 @@ p {
   text-align: left;
 }
 
-/* NEWSLETTER PANEL HOVER: unify glow with nav + contact form */
+/* NEWSLETTER PANEL HOVER on HOME: unify glow with nav + contact form */
 .home-panel-newsletter:hover {
   border-color: var(--accent);
   box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
@@ -327,7 +327,7 @@ p {
 }
 
 /* -----------------------------------
-   NEWSLETTER FORM
+   NEWSLETTER FORM (on any page)
 ----------------------------------- */
 .newsletter-form {
   margin-top: 12px;
@@ -473,7 +473,7 @@ p {
 }
 
 /* -----------------------------------
-   FORM CONTAINER (Contact page layout)
+   FORM CONTAINER (Contact + Newsletter layout)
 ----------------------------------- */
 
 /* Centered wrapper for all forms */
@@ -485,8 +485,9 @@ p {
   margin: 2rem 0;
 }
 
-/* Contact card styling + base shadow */
-.form-container .contact-form {
+/* Shared card styling for contact + newsletter forms */
+.form-container .contact-form,
+.form-container .newsletter-form {
   background: #0b1120;
   padding: 1.5rem;
   border-radius: 12px;
@@ -496,14 +497,16 @@ p {
   max-width: 480px;
 }
 
-/* Glow on hover: unified with nav + newsletter + post cards */
-.form-container .contact-form:hover {
+/* Glow on hover: unified with nav + newsletter home panel + post cards */
+.form-container .contact-form:hover,
+.form-container .newsletter-form:hover {
   border-color: var(--accent);
   box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
 }
 
 /* Fade in animation when the form appears */
-.form-container .contact-form {
+.form-container .contact-form,
+.form-container .newsletter-form {
   animation: fadeIn 0.5s ease-out;
 }
 
