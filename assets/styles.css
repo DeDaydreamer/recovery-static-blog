@@ -141,7 +141,7 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 
@@ -197,15 +197,15 @@ p {
   border-radius: 12px;
   background: rgba(15, 23, 42, 0.62);
   transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.1s ease;
+    border-color 0.7s ease,
+    box-shadow 2s ease,
+    transform 0.5s ease;
 }
 
 .post-item:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
-  transform: translateY(-1px);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
 }
 
 .post-item a {
@@ -283,12 +283,17 @@ p {
 
 .home-panel-newsletter {
   text-align: left;
+  transition:
+    border-color 0.7s ease,
+    box-shadow 2s ease,
+    transform 0.5s ease;
 }
 
 /* NEWSLETTER PANEL HOVER on HOME: unify glow with nav + contact form */
 .home-panel-newsletter:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
 }
 
 .home-panel-newsletter p:last-child {
