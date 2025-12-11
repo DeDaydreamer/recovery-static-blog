@@ -1,3 +1,6 @@
+/* -----------------------------------
+   GLOBAL THEME VARIABLES
+----------------------------------- */
 :root {
   --bg-start: #01050f;
   --bg-end: #0b1b3b;
@@ -9,6 +12,9 @@
   --body-font: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
+/* -----------------------------------
+   BASE RESET & TYPOGRAPHY
+----------------------------------- */
 * {
   box-sizing: border-box;
 }
@@ -32,6 +38,9 @@ a:hover {
   text-decoration: underline;
 }
 
+/* -----------------------------------
+   PAGE SHELL
+----------------------------------- */
 .page {
   max-width: 960px;
   margin: 0 auto;
@@ -41,6 +50,9 @@ a:hover {
   min-height: 100vh;
 }
 
+/* -----------------------------------
+   HEADER & NAVIGATION
+----------------------------------- */
 .header {
   padding-top: 4px;
 }
@@ -76,16 +88,25 @@ a:hover {
   padding: 6px 10px;
   border-radius: 8px;
   border: 1px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
+/* NAV HOVER: subtle frame + unified glow with forms & cards */
 .nav a:hover,
 .nav a:focus-visible {
   color: var(--accent);
-  border-color: var(--border);
+  border-color: var(--accent);
   background: rgba(34, 211, 238, 0.08);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
 }
 
+/* -----------------------------------
+   MAIN CONTENT
+----------------------------------- */
 .main {
   flex: 1;
   width: 100%;
@@ -114,6 +135,9 @@ a:hover {
   border-radius: 12px;
 }
 
+/* -----------------------------------
+   HEADINGS & TEXT
+----------------------------------- */
 h1,
 h2,
 h3 {
@@ -154,6 +178,9 @@ p {
   margin-bottom: 8px;
 }
 
+/* -----------------------------------
+   POST LISTS
+----------------------------------- */
 .post-list {
   list-style: none;
   padding: 0;
@@ -163,11 +190,22 @@ p {
   gap: 14px;
 }
 
+/* Post cards with unified hover glow */
 .post-item {
   padding: 12px 14px;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: rgba(15, 23, 42, 0.62);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+.post-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
+  transform: translateY(-1px);
 }
 
 .post-item a {
@@ -175,6 +213,9 @@ p {
   font-size: 0.98rem;
 }
 
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
 .footer {
   padding-top: 16px;
   padding-bottom: 8px;
@@ -189,7 +230,6 @@ p {
   margin: 0 auto;
   text-align: center;
 }
-
 
 .footer a {
   color: #e5e7eb;
@@ -208,6 +248,9 @@ p {
   color: var(--accent-soft);
 }
 
+/* -----------------------------------
+   RESPONSIVE LAYOUT
+----------------------------------- */
 /* Small screens: stack header */
 @media (max-width: 760px) {
   .header-inner {
@@ -224,7 +267,16 @@ p {
   }
 }
 
-/* Home layout: Posts + Articles side by side, Newsletter full width */
+/* Stack the home grid on tablets/phones */
+@media (max-width: 900px) {
+  .home-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------------------
+   HOME GRID (Posts + Articles + Newsletter)
+----------------------------------- */
 .home-grid {
   margin-top: 24px;
   display: flex;
@@ -259,6 +311,12 @@ p {
   text-align: left;
 }
 
+/* NEWSLETTER PANEL HOVER: unify glow with nav + contact form */
+.home-panel-newsletter:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
+}
+
 .home-panel-newsletter p:last-child {
   margin-bottom: 0;
 }
@@ -268,14 +326,9 @@ p {
   color: #9ca3af;
 }
 
-/* Stack the grid on tablets/phones */
-@media (max-width: 900px) {
-  .home-row {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Newsletter form */
+/* -----------------------------------
+   NEWSLETTER FORM
+----------------------------------- */
 .newsletter-form {
   margin-top: 12px;
   display: flex;
@@ -401,6 +454,7 @@ p {
   transition: background 0.2s ease, transform 0.1s ease;
 }
 
+/* Button hover: subtle lift (glow stays on containers/nav/cards) */
 .contact-form button[type="submit"]:hover,
 .newsletter-form button[type="submit"]:hover {
   background: var(--accent-soft);
@@ -418,6 +472,10 @@ p {
   overflow: hidden;
 }
 
+/* -----------------------------------
+   FORM CONTAINER (Contact page layout)
+----------------------------------- */
+
 /* Centered wrapper for all forms */
 .form-container {
   display: flex;
@@ -427,7 +485,7 @@ p {
   margin: 2rem 0;
 }
 
-/* Optional: add soft border/box look */
+/* Contact card styling + base shadow */
 .form-container .contact-form {
   background: #0b1120;
   padding: 1.5rem;
@@ -438,19 +496,24 @@ p {
   max-width: 480px;
 }
 
-/* Glow on hoover */
+/* Glow on hover: unified with nav + newsletter + post cards */
 .form-container .contact-form:hover {
   border-color: var(--accent);
   box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
 }
 
-
-/* Fade in animation */
+/* Fade in animation when the form appears */
 .form-container .contact-form {
   animation: fadeIn 0.5s ease-out;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
